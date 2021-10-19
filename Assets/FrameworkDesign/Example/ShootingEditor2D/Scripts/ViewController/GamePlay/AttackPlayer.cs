@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ShootingEditor2D
 {
-    public class AttackPlayer : MonoBehaviour,IController
+    public class AttackPlayer : ShootingEditor2DController
     {
         public int Hurt = 1;
 
@@ -14,11 +14,6 @@ namespace ShootingEditor2D
             {
                 this.SendCommand(new HurtPlayerCommand(Hurt));
             }
-        }
-
-        public IArchitecture GetArchitecture()
-        {
-            return ShootingEditor2D.Interface;
         }
     }
 }

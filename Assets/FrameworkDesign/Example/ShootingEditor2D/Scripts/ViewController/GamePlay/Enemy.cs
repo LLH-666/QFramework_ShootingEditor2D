@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ShootingEditor2D
 {
-    public class Enemy : MonoBehaviour, IController
+    public class Enemy : ShootingEditor2DController
     {
         private Rigidbody2D mRigidbody2D;
         private Trigger2DCheck mWallCheck;
@@ -34,11 +34,6 @@ namespace ShootingEditor2D
                 localScale.x = -localScale.x;
                 transform.localScale = localScale;
             }
-        }
-
-        public IArchitecture GetArchitecture()
-        {
-            return ShootingEditor2D.Interface;
         }
     }
 }

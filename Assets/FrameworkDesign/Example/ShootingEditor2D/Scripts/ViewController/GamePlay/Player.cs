@@ -1,9 +1,10 @@
 using System;
+using FrameworkDesign;
 using UnityEngine;
 
 namespace ShootingEditor2D
 {
-    public class Player : MonoBehaviour
+    public class Player : ShootingEditor2DController
     {
         private Rigidbody2D mRigidbody2D;
         private Trigger2DCheck mGroundCheck;
@@ -33,6 +34,11 @@ namespace ShootingEditor2D
             if (Input.GetKeyDown(KeyCode.R))
             {
                 mGun.Reload();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                this.SendCommand<ShiftGunCommand>();
             }
         }
 

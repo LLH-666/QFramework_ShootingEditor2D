@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ShootingEditor2D
 {
-    public class UIController : MonoBehaviour, IController
+    public class UIController : ShootingEditor2DController
     {
         private IPlayerModel mPlayerModel;
         private IStatSystem mStatSystem;
@@ -18,7 +18,12 @@ namespace ShootingEditor2D
             mStatSystem = this.GetSystem<IStatSystem>();
             mGunSystem = this.GetSystem<IGunSystem>();
 
-            mMaxBulletCount = this.SendQuery(new MacBulletCountQuery(mGunSystem.CurrentGun.Name.Value));
+            mMaxBulletCount = this.SendQuery(new MaxBulletCountQuery(mGunSystem.CurrentGun.Name.Value));
+
+            this.RegisterEvent<OnCurrentGunChanged>(e =>
+            {
+                mMaxBulletCount = this.SendQuery(new MaxBulletCountQuery(e.Name));
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
         }
 
         private void OnDestroy()
@@ -43,11 +48,6 @@ namespace ShootingEditor2D
             GUI.Label(new Rect(10, 210, 300, 100), $"枪械状态:{mGunSystem.CurrentGun.GunState.Value}", mLabelStyle.Value);
             GUI.Label(new Rect(Screen.width - 10 - 300, 10, 300, 100),
                 $"击杀次数:{mStatSystem.KillCount.Value}", mLabelStyle.Value);
-        }
-
-        public IArchitecture GetArchitecture()
-        {
-            return ShootingEditor2D.Interface;
         }
     }
 }

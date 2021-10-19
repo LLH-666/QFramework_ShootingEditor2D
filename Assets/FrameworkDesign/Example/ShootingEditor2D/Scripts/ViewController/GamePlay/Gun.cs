@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ShootingEditor2D
 {
-    public class Gun : MonoBehaviour, IController
+    public class Gun : ShootingEditor2DController
     {
         private Bullet mBullet;
 
@@ -18,7 +18,7 @@ namespace ShootingEditor2D
 
             mGunInfo = this.GetSystem<IGunSystem>().CurrentGun;
 
-            mMaxBulletCount = this.SendQuery(new MacBulletCountQuery(mGunInfo.Name.Value));
+            mMaxBulletCount = this.SendQuery(new MaxBulletCountQuery(mGunInfo.Name.Value));
         }
 
         private void OnDestroy()
@@ -47,11 +47,6 @@ namespace ShootingEditor2D
             {
                 this.SendCommand<ReloadCommand>();
             }
-        }
-
-        public IArchitecture GetArchitecture()
-        {
-            return ShootingEditor2D.Interface;
         }
     }
 }

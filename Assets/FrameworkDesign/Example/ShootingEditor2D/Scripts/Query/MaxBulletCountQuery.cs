@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace ShootingEditor2D
 {
-    public class MacBulletCountQuery : AbstractQuery<int>
+    public class MaxBulletCountQuery : AbstractQuery<int>
     {
         private readonly string mGunName;
 
-        public MacBulletCountQuery(string gunName)
+        public MaxBulletCountQuery(string gunName)
         {
             mGunName = gunName;
         }
