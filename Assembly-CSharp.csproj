@@ -136,6 +136,7 @@
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\Command\FullBulletCommand.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ViewController\GamePlay\SupplyStation.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ShootingEditor2DController.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ViewController\LevelEditor\LevelEditor.cs" />
      <None Include="Assets\FrameworkDesign\Example\ShootingEditor2D\LevelFile\LevelFileTest.xml" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
