@@ -1,6 +1,6 @@
 using System;
 
-namespace FrameworkDesign.Example
+namespace QFramework
 {
     public struct GameStartEvent
     {

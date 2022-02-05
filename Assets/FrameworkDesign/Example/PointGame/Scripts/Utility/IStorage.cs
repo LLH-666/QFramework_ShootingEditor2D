@@ -1,6 +1,7 @@
 using UnityEngine;
+using QFramework;
 
-namespace FrameworkDesign.Example
+namespace QFramework
 {
     public interface IStorage : IUtility
     {

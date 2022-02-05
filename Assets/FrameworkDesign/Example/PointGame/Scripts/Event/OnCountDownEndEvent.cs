@@ -1,4 +1,4 @@
-namespace FrameworkDesign.Example
+namespace QFramework
 {
     public struct OnCountDownEndEvent
     {

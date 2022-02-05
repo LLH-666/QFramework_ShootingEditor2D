@@ -1,6 +1,7 @@
 using UnityEngine;
+using QFramework;
 
-namespace FrameworkDesign.Example
+namespace QFramework
 {
     public interface IGameModel : IModel
     {
@@ -43,13 +44,13 @@ namespace FrameworkDesign.Example
             var storage = this.GetUtility<IStorage>();
 
             BestScore.Value = storage.LoadInt(nameof(BestScore), 0);
-            BestScore.RegisterOnValueChanged((v) => storage.SaveInt(nameof(BestScore), v));
+            BestScore.Register((v) => storage.SaveInt(nameof(BestScore), v));
 
             Life.Value = storage.LoadInt(nameof(Life), 3);
-            Life.RegisterOnValueChanged(v => storage.SaveInt(nameof(Life), v));
+            Life.Register(v => storage.SaveInt(nameof(Life), v));
 
             Gold.Value = storage.LoadInt(nameof(Gold), 0);
-            Gold.RegisterOnValueChanged(v => storage.SaveInt(nameof(Gold), v));
+            Gold.Register(v => storage.SaveInt(nameof(Gold), v));
         }
     }
 

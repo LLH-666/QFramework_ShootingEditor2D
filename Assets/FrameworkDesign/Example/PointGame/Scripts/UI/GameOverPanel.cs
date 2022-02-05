@@ -1,6 +1,8 @@
-namespace FrameworkDesign.Example
+using UnityEngine;
+
+namespace QFramework
 {
-    public class GameOverPanel : AbstractPointGameController
+    public class GameOverPanel : MonoBehaviour
     {
     }
 }

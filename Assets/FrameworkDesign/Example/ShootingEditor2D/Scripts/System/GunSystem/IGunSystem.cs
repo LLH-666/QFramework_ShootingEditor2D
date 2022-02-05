@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using FrameworkDesign;
+using QFramework;
 using UnityEngine;
 
 namespace ShootingEditor2D

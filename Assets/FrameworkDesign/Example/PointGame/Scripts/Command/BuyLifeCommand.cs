@@ -1,6 +1,6 @@
-using FrameworkDesign;
+using QFramework;
 
-namespace FrameworkDesign.Example
+namespace QFramework
 {
     public class BuyLifeCommand : AbstractCommand
     {
