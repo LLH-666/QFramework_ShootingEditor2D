@@ -120,6 +120,8 @@
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\CounterViewController.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\GameStartEvent.cs" />
      <Compile Include="Assets\IOC\SimpleIOC.cs" />
+     <Compile Include="Assets\TESObserver\TESObserver.cs" />
+     <Compile Include="Assets\TESObserver\TESObserver2.cs" />
      <None Include="Assets\FrameworkDesign\Example\ShootingEditor2D\LevelFile\LevelFileTest.xml" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
