@@ -86,6 +86,7 @@
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ViewController\LevelEditor\LevelEditor.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ViewController\LevelEditor\LevelPlayer.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Game\Game.cs" />
+     <Compile Include="Assets\GlobalEventExample.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ViewController\GamePlay\Enemy.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\Command\HurtPlayerCommand.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GamePanel.cs" />
@@ -94,6 +95,7 @@
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\Command\KillEnemyCommand.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Command\StartGameCommand.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\AddCountCommand.cs" />
+     <Compile Include="Assets\QFramework.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ViewController\GamePlay\BulletPickItem.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\Model\IPlayerModel.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\ShootingEditor2D\Scripts\ViewController\GamePlay\AttackPlayer.cs" />
@@ -117,8 +119,7 @@
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\PointGame.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\CounterViewController.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\GameStartEvent.cs" />
-     <Compile Include="Assets\QFramework.cs" />
-     <Compile Include="Assets\GlobalEventExample.cs" />
+     <Compile Include="Assets\IOC\SimpleIOC.cs" />
      <None Include="Assets\FrameworkDesign\Example\ShootingEditor2D\LevelFile\LevelFileTest.xml" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

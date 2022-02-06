@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\Editor\EditorCounterApp.cs" />
+     <Compile Include="Assets\IOC\Editor\SimpleIOCTesting.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
